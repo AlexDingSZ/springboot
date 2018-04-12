@@ -15,7 +15,7 @@ public class ScheduledTaskService {
 
     }
 
-    @Scheduled(cron ="0 04 16 ? * *")
+    @Scheduled(cron ="0 33 16 ? * *")  //16点33分钟执行一次
     public void fixTimeExecution(){
         System.out.println("在指定时间"+dateFormat.format(new Date())+"执行");
     }
