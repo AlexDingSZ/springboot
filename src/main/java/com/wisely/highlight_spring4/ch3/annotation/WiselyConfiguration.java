@@ -11,5 +11,5 @@ import java.lang.annotation.*;
 @Configuration
 @ComponentScan
 public @interface WiselyConfiguration {
-    String[] value() default {};
+    String[] value() default {"a","b"};
 }
