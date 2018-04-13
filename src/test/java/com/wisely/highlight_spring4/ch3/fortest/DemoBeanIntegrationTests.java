@@ -24,4 +24,14 @@ public class DemoBeanIntegrationTests {
         Assert.assertEquals(expected,actual);
         System.out.println("please check result");
     }
+
+
+    @Test
+    public void prodBeanShouldInject1(){
+        String expected = "from production p1rofile";
+        String actual = testBean.getContent();
+
+        Assert.assertEquals(expected,actual);
+        System.out.println("please check result");
+    }
 }
