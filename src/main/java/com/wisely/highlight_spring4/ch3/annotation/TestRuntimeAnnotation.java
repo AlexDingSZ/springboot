@@ -31,6 +31,9 @@ public class TestRuntimeAnnotation {
         sb.append("Class注解：").append("\n");
         ClassInfo classInfo = cls.getAnnotation(ClassInfo.class);
         if (classInfo != null) {
+            int abc = cls.getModifiers();
+            String ccc = Modifier.toString(cls.getModifiers());
+            String a1 = classInfo.value();
             sb.append(Modifier.toString(cls.getModifiers())).append(" ")
                     .append(cls.getSimpleName()).append("\n");
             sb.append("注解值: ").append(classInfo.value()).append("\n\n");
@@ -64,5 +67,6 @@ public class TestRuntimeAnnotation {
         }
 
         System.out.print(sb.toString());
+        System.out.println("i:"+i);
     }
 }
